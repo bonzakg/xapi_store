@@ -34,7 +34,7 @@ abstract class Event extends PhpObj {
         $opts['context_info']->{$version_key} = $version;
         return [
             'actor' => $this->readUser($opts, 'user'),
-            /*'context' => [
+            'context' => [
                 'platform' => $opts['context_platform'],
                 'language' => $opts['context_lang'],
                 'extensions' => [
@@ -46,7 +46,7 @@ abstract class Event extends PhpObj {
                         $this->readApp($opts),
                     ],
                 ],
-            ],*/
+            ],
             'timestamp' => $opts['time'],
         ];
     }
